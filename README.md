@@ -17,7 +17,7 @@
 	~$ rails s
 
 ## Test POST request on local server
-	~$ curl -H "Content-Type:application/json; charset=utf-8" -d'{"music_album":{"title":"Believe","artist":"Justin Bieber","url":"https://justinbiebermusic.com","image":"https://image.png","thumbnail_image":"lol"}}' http://localhost:3000/music_albums
+	~$ curl -H "Content-Type:application/json; charset=utf-8" -d'{"music_album":{"title":"Purpose","artist":"Justin Bieber","url":"https://justinbiebermusic.com","image":"https://images-na.ssl-images-amazon.com/images/I/71hDQwCAwkL._SX450_.jpg","thumbnail_image":"http://imgur.com/VOHDPR9"}}' http://localhost:3000/music_albums
 
 ## Setup routes
 Edit app/config/routes.rb
@@ -39,4 +39,4 @@ Install heroku cli
 	~$ heroku run rake db:migrate
 
 ## Test POST request on heroku server
-	~$ curl -H "Content-Type:application/json; charset=utf-8" -d'{"music_album":{"title":"Believe","artist":"Justin Bieber","url":"https://justinbiebermusic.com","image":"https://image.png","thumbnail_image":"lol"}}' http://appname.herokuapp.com/music_albums
+	~$ curl -H "Content-Type:application/json; charset=utf-8" -d'{"music_album":{"title":"Purpose","artist":"Justin Bieber","url":"https://justinbiebermusic.com","image":"https://images-na.ssl-images-amazon.com/images/I/71hDQwCAwkL._SX450_.jpg","thumbnail_image":"http://imgur.com/VOHDPR9"}}' http://appname.herokuapp.com/music_albums
